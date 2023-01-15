@@ -277,6 +277,7 @@ public class RobotExp {
                     }
                     break;
                 case 10:
+                    //BladeMaster
                     while (stop != true) {
                     robot.delay(100);
                     robot.keyPress(KeyEvent.VK_NUMPAD3);
