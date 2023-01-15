@@ -22,17 +22,15 @@ public class RobotExp {
         // 2: Cryomancer
         // 3: Frostval Barbarian
         // 4: ArchPaladin & ShadowScythe General
-        // 5: Dark Lord (Com auto turn-in)
+        // 5: Dark Lord (With auto turn-in)
         // 6: Glacial Berserker
-        // 7: Blaze Binder (Com auto turn-in para 2 quests)
+        // 7: Blaze Binder (With auto turn-in for 2 quests)
         // 8: Chaos Avenger
         // 9: Dragon of Time
         // 10: SwordMaster
         try {
             Robot robot = new Robot();
             Timer cronometro = new Timer();
-            // Cria um delay de 5 segundos de modo que você possa abrir o notepad antes da execução do código a seguir
-            // Robot começa a escrever
 
             switch (modo) {
                 case 0:
@@ -149,6 +147,10 @@ public class RobotExp {
                 case 7:
                     //Blaze Binder
                     while (stop != true) {
+                            //Auto Turn-in, change the coordinates X and Y in mouseMove according to the positioning of your "back" and "turn-in" buttons.
+                            //Use a coordinate that presses the same space as "back" when the quest is not done and "turn-in" when it is.
+                            //I recommend using MPos to discovering the coordenates: 
+                            //https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj2iZP75cn8AhXvrZUCHSPTATQQFnoECA4QAQ&url=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmpos%2F&usg=AOvVaw3iJDqdw8ARv1D02scy1iti
                             robot.mouseMove(900, 565);
                             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
                             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
