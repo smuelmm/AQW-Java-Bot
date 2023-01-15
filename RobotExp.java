@@ -36,6 +36,9 @@ public class RobotExp {
                 case 0:
                     //Merge Shop
                     while (stop != true) {
+                        //change the coordinates X and Y in mouseMove according to the positioning of your "merge" button.
+                        //I recommend using MPos to discovering the coordenates: 
+                        //https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj2iZP75cn8AhXvrZUCHSPTATQQFnoECA4QAQ&url=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmpos%2F&usg=AOvVaw3iJDqdw8ARv1D02scy1iti
                         robot.delay(1750);
                         robot.mouseMove(685, 630);
                         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
